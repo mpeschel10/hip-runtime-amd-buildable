@@ -1,0 +1,11 @@
+diff --unified --recursive --text src/ROCclr-rocm-5.4.3/device/devhcprintf.cpp src/package.new/device/devhcprintf.cpp
+--- src/ROCclr-rocm-5.4.3/device/devhcprintf.cpp	2023-01-16 11:23:20.000000000 -0500
++++ src/package.new/device/devhcprintf.cpp	2023-05-11 17:17:57.359958369 -0400
+@@ -26,6 +26,7 @@
+ #include <cstdio>
+ #include <cstring>
+ #include <string>
++#include <cstdint>
+ 
+ static void checkPrintf(FILE* stream, int* outCount, const char* fmt, ...) {
+   va_list args;
